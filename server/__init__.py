@@ -4,7 +4,6 @@ from flask.json import jsonify
 from flask_restplus import Api
 
 app = Flask(__name__, template_folder="../public", static_folder="../public", static_url_path='')
-
 api = Api(app, title='My first Python API', version='1.0', doc='/apidocs/', description='A number-crunching API')
 
 from server.routes import *
