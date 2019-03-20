@@ -61,4 +61,4 @@ class ReplaceList(Resource):
 class CalculateMean(Resource):
     def get(self):
         my_mean = ms.calculate_mean(my_list)
-return jsonify(mean=my_mean)
+        return jsonify(mean=my_mean)
